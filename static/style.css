@@ -274,6 +274,10 @@ header {
   .intro {
     width: 100%;
     padding: 0px;
+    height: 80vh;
+  }
+  .intro::before {
+    height: 80vh !important;
   }
   .brand {
     color: var(--text-black) !important;

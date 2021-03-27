@@ -27,8 +27,9 @@ function changeNav(){
     } 
 }
 function changeColor(list,color){
-    for(var i=0;i<5;i++){
+    for(var i=0;i<4;i++){
         var li = list[i];
         li.style.color = color;
+        
     }
 }

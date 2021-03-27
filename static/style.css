@@ -196,7 +196,8 @@ header {
   display: block;
   height: 30px;
   padding: 15px 0px;
-  font-size: 16px;
+  font-size: 20px;
+  color: red;
 }
 .card span {
   color: blue;
@@ -313,5 +314,62 @@ header {
   }
   .intro-content p {
     font-size: 15px;
+  }
+  .body-container {
+    width: 100%;
+    height: auto;
+  }
+  .description {
+    width: 100%;
+    height: auto;
+  }
+  .cards-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 0px;
+  }
+  .card img {
+    max-width: 400px;
+    width: 100%;
+  }
+  .content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .content-img {
+    max-width: 400px;
+    width: 100%;
+    padding: 0px 5px 0px 0px;
+    height: auto;
+  }
+  .content-img img {
+    width: 100%;
+    height: 300px;
+  }
+  .content-text {
+    width: 100%;
+    padding: 10px 0px 10px 12px;
+    height: auto;
+  }
+  .content-right {
+    text-align: left;
+  }
+  .body-container hr {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .content-text h1 {
+    text-align: center;
+  }
+  .content-text p {
+    text-align: center;
   }
 }

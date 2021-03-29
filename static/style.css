@@ -111,7 +111,6 @@ header {
   background-color: rgb(43, 41, 41);
   background-size: cover;
   background-position: center center;
-  z-index: 0;
   position: relative;
 }
 .intro::before {

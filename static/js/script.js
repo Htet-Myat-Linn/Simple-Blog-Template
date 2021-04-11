@@ -5,8 +5,9 @@ section_background.style.backgroundImage = `url('images/background${random}.jpg'
 var nav = document.getElementsByClassName("nav")[0];
 var btn = document.getElementsByClassName("menu")[0];
 btn.addEventListener('click', _=> {
-    nav.classList.toggle("show-nav")
-
+    $(".nav").slideToggle(1000,_=>{
+        nav.classList.toggle("show-nav");
+    });
 });
 
 window.onscroll = function(){changeNav();};

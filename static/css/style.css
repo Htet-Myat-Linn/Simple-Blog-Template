@@ -82,14 +82,11 @@ header {
   left: 0;
   bottom: 0;
 }
-.middle:hover::before {
+.middle:not(.active):hover::before {
   transform: scaleX(1);
 }
 .active {
   text-decoration: underline 3px var(--text-sky-blue) !important;
-}
-.active:hover::before {
-  transform: scale(0) !important;
 }
 
 /* @keyframes drop-down {

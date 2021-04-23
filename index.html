@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/animate/animate.css"/>
     <title>APHRODIT3</title>
 </head>
 <body>
@@ -54,10 +54,10 @@
             </div>
         </div>
         <section class="content">
-            <div class="content-img">
+            <div class="content-img wow  animate__slideInLeft" data-wow-duration="1s" data-wow-offset="250">
                 <img src="images/articles.svg" alt="">
             </div>
-            <div class="content-text">
+            <div class="content-text wow  animate__slideInRight" data-wow-duration="1s" data-wow-offset="250">
                 <h1>Interesting Weekly Article</h1><br>
                 <p>A special weekly article brought to you by my blog may be such a useful computer science knowledge.<br>It may be either a knowledge sharing article or a tutorial.
                     <br>Lets enjoy together!
@@ -65,10 +65,10 @@
             </div>
         </section>
         <section class="content content-right">
-            <div class="content-img">
+            <div class="content-img wow  animate__slideInRight" data-wow-duration="1s" data-wow-offset="250">
                 <img src="images/VTutorial.svg" alt="">
             </div>
-            <div class="content-text">
+            <div class="content-text wow  animate__slideInLeft" data-wow-duration="1s" data-wow-offset="250">
                 <h1>Useful Weekly Tips-and-Tricks</h1><br>
                 <p>We also have a tips-and-tricks vlogs every weekend.<br>Surely contains smart hacks that will make your coding faster. <br>
                     Code Smarter and Faster - <a href="">Our Facebook Page</a>
@@ -76,10 +76,10 @@
             </div>
         </section>
         <section class="content">
-            <div class="content-img">
+            <div class="content-img wow  animate__slideInLeft" data-wow-duration="1s" data-wow-offset="250">
                 <img src="images/contributions.svg" alt="">
             </div>
-            <div class="content-text">
+            <div class="content-text wow  animate__slideInRight" data-wow-duration="1s" data-wow-offset="250">
                 <h1>Our Contributions</h1><br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti, rerum, minus corporis ipsum tenetur porro possimus omnis facilis iste maxime, inventore non deleniti exercitationem ex. Commodi natus tempore quo?
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem cum, aspernatur, facere vel provident asperiores optio fugiat, aperiam quos
@@ -99,5 +99,16 @@
     </section>
     <script src="static/js/script.js"></script>
     <script src="static/js/jQuery.js"></script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+                    boxClass:     'wow',      // default
+                    animateClass: 'animate__animated', // default
+                    offset:       0,          // default
+                    mobile:       true,       // default
+                    live:         true        // default
+                })
+        wow.init();
+    </script>
 </body>
 </html>
